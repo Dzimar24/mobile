@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!-- Warna default, nanti di-tint langsung via layout XML -->
+    <solid android:color="#FFFFFF" />
+</shape>
