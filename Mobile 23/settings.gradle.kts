@@ -24,4 +24,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Mobile 23"
 include(":app")
- 
