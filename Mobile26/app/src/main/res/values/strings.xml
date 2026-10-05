@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mobile 26</string>
+    <string name="save_as_public">Save as Public</string>
+    <string name="show_private_data">Show private data</string>
+</resources>
