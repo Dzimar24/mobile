@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UpdateBiodata">
+
+    <!-- Label Number -->
+    <TextView
+        android:id="@+id/textViewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Number"/>
+
+    <!-- Input Number (Diberi layout_below ke textViewOne) -->
+    <EditText
+        android:id="@+id/editTextOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOne"
+        android:inputType="number"
+        android:maxLength="10">
+        <requestFocus/>
+    </EditText>
+
+    <!-- Label Name -->
+    <TextView
+        android:id="@+id/textViewTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/editTextOne"
+        android:layout_marginTop="10dp"
+        android:text="Name"/>
+
+    <!-- Input Name -->
+    <EditText
+        android:id="@+id/editTextTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewTwo"
+        android:layout_below="@id/textViewTwo"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <!-- Label Tanggal Lahir -->
+    <TextView
+        android:id="@+id/textViewTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextTwo"
+        android:layout_below="@id/editTextTwo"
+        android:layout_marginTop="10dp"
+        android:text="Tanggal Lahir"/>
+
+    <!-- Input Tanggal Lahir -->
+    <EditText
+        android:id="@+id/editTextTree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewTree"
+        android:layout_below="@id/textViewTree"
+        android:inputType="date"/>
+
+    <!-- Label Jenis Kelamin -->
+    <TextView
+        android:id="@+id/textViewFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextTree"
+        android:layout_below="@id/editTextTree"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"/>
+
+    <!-- Input Jenis Kelamin -->
+    <EditText
+        android:id="@+id/editTextFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewFour"
+        android:layout_below="@id/textViewFour"
+        android:inputType="text"
+        android:maxLength="1"
+        android:hint="L or P"/>
+
+    <!-- Label Alamat -->
+    <TextView
+        android:id="@+id/textViewFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextFour"
+        android:layout_below="@id/editTextFour"
+        android:layout_marginTop="10dp"
+        android:text="Alamat"/>
+
+    <!-- Input Alamat -->
+    <EditText
+        android:id="@+id/editTextFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textViewFive"
+        android:layout_below="@id/textViewFive"
+        android:inputType="text"
+        android:maxLength="100"/>
+
+    <!-- Button Save -->
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/editTextFive"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Update"
+        android:textColor="@color/black"/>
+
+    <!-- Button Back -->
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/editTextFive"
+        android:layout_alignEnd="@id/editTextFive"/>
+
+</RelativeLayout>

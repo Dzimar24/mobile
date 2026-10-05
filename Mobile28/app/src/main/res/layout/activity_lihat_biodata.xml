@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LihatBiodata">
+
+    <!-- 1. BARIS NOMER -->
+    <TextView
+        android:id="@+id/lblNomor"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Nomor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lblNomor"
+        android:text="TextView" />
+
+    <!-- 2. BARIS NAMA -->
+    <TextView
+        android:id="@+id/lblNama"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNomor"
+        android:layout_marginTop="16dp"
+        android:text="Nama"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblNama"
+        android:layout_toRightOf="@id/lblNama"
+        android:text="TextView" />
+
+    <!-- 3. BARIS TANGGAL LAHIR -->
+    <TextView
+        android:id="@+id/lblTgl"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblNama"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal Lahir"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewTree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblTgl"
+        android:layout_toRightOf="@id/lblTgl"
+        android:text="TextView" />
+
+    <!-- 4. BARIS JENIS KELAMIN -->
+    <TextView
+        android:id="@+id/lblJk"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTgl"
+        android:layout_marginTop="16dp"
+        android:text="Jenis Kelamin"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblJk"
+        android:layout_toRightOf="@id/lblJk"
+        android:text="TextView" />
+
+    <!-- 5. BARIS ALAMAT -->
+    <TextView
+        android:id="@+id/lblAlamat"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblJk"
+        android:layout_marginTop="16dp"
+        android:text="Alamat"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/lblAlamat"
+        android:layout_toRightOf="@id/lblAlamat"
+        android:text="TextView" />
+
+    <!-- BUTTON BACK -->
+    <Button
+        android:id="@+id/buttonOne"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblAlamat"
+        android:layout_marginTop="32dp"
+        android:text="Back" />
+
+</RelativeLayout>
